@@ -4,7 +4,7 @@ public class HashTable<K, V> { // Generics для любых видов key, val
     private Node<K, V>[] hashtable = new Node[size];
 
     private int hashFunction(K key) { 
-        if (key instanceof String) { // на случай если ключ окажется строко
+        if (key instanceof String) { // на случай если ключ окажется строкой
             int hash = 0;
             for (int i = 0; i < ((String)key).length(); ++ i)
                 hash += ((String)key).charAt(i);
