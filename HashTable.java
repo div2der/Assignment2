@@ -81,7 +81,7 @@ public class HashTable<K, V> { // Generics для любых видов key, val
                 return true;
             while(node.next != null && !value.equals(node.value))
                 node = node.next;
-            if (node.value == value)
+            if (value.equals(node.value))
                 return true;
         }
         return false;
