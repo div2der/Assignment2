@@ -10,7 +10,7 @@ public class HashTable<K, V> { // Generics для любых видов key, val
                 hash += ((String)key).charAt(i);
             return hash % size;
         }
-        else // на случай ели ключ окажется целым числом
+        else // на случай если ключ окажется целым числом
             return (Integer)key % size;
     }
 
